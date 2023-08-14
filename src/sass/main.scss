@@ -1,0 +1,12 @@
+.home, .about, .logement, .notFound{
+    margin: 0 auto;
+    max-width: 1240px;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+.nav .active {
+    border-bottom: 2px solid  #FF6060;
+}
