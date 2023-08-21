@@ -1,3 +1,4 @@
+export const logementList = 
 [
 	{
 		"id": "c67ab8a7",

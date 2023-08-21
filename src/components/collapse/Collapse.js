@@ -1,21 +1,20 @@
 import './collapse.scss';
+import React, { useState } from 'react';
 
-export default function Collapse() {
-    return (
-      <div className="collapse">
-        
-        <h2>test collaspe</h2>
-        <h3>description test collapse</h3>
+export default function Collapse({ title, content }) {
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
-        <h2>test collaspe</h2>
-        <h3>description test collapse</h3>
+  const toggleCollapse = () => {
+    setIsCollapsed(!isCollapsed);
+  };
 
-        <h2>test collaspe</h2>
-        <h3>description test collapse</h3>
-
-        <h2>test collaspe</h2>
-        <h3>description test collapse</h3>
-
+  return (
+    <div className="collapse">
+      <div className="collapse-header" onClick={toggleCollapse}>
+        <h3>{title}</h3>
+        <div className={`arrow ${isCollapsed ? 'up' : 'down'}`}>&#8593;</div>
       </div>
-    );
-  }
+      {!isCollapsed && <div className="collapse-content">{content}</div>}
+    </div>
+  );
+}

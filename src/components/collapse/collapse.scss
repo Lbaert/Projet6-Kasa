@@ -1,1 +1,39 @@
 @import '../../sass/main.scss';
+
+.collapse {
+    border-radius: 15px;
+    margin: 10px;
+    background-color: #FF6060;
+  }
+  
+  .collapse-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 10px;
+    color: white;
+    margin-top: 30px;
+  }
+  
+  .arrow {
+    font-size: 48px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .up {
+    transform: rotate(-180deg);
+  }
+  
+  .collapse-content {
+    background-color: #F6F6F6;;
+    border-radius: 10px;
+    color: #FF6060;
+    padding: 20px;
+  }
+  
+h3 {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+}
