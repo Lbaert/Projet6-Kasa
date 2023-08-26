@@ -3,11 +3,10 @@ import Header from '../../components/header/Header';
 import Carousel from "../../components/carousel/Carousel";
 import Collapse from '../../components/collapse/Collapse';
 import Footer from '../../components/footer/Footer';
+import Rating from '../../components/rating/Rating';
 import './logement.scss';
 import { logementList } from '../../data/data';
 import { useParams } from "react-router-dom";
-
-// ... (importations)
 
 export default function Logement() {
   const { logementId } = useParams();
@@ -22,7 +21,6 @@ export default function Logement() {
       <Header />
       <Carousel images={logement.pictures} />
       <div className='logement-details'>
-
         <div className='info-logement'>
           <h1 className='title'>{logement.title}</h1>
           <p className='location'>{logement.location}</p>
@@ -34,18 +32,19 @@ export default function Logement() {
             ))}
           </div>
         </div>
-
         <div className='info-host'>
           <div className='host'>
             <div className='name-host'> {logement.host.name}</div>
             <img className='img-host' src={logement.host.picture} alt={logement.host.name} />
           </div>
-          <p className='rating'> {logement.rating}</p>
+          <p className='rating'>
+            <Rating rating={parseInt(logement.rating)} />
+          </p>
         </div>
-
       </div>
-      <Collapse title="test" content="test" />
-      <Collapse title="test" content="test" />
+      <div className='collapses'>
+        <Collapse title="Description" content= {logement.description} />
+        <Collapse title="Équipements" content={logement.equipments.map(equipment => <p key={equipment}>{equipment}</p>)} />      </div>
       <Footer />
     </div>
   );

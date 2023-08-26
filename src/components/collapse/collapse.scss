@@ -35,16 +35,24 @@
   
 h3 {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 16px;
     margin: 0;
 }
 
 .logement .collapses {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 
 .logement .collapse {
   width: 50%;
+}
+
+.logement .collapse-header {
+  margin-top: 0;
+}
+
+.collapse-content p {
+  margin: 0;
 }
