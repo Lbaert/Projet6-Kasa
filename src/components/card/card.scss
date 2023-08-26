@@ -13,14 +13,17 @@
   width: calc(33.33% - 20px);
   text-decoration: none;
   color: inherit;
-  padding: 10px; /* Ajoutez cet espace interne */
+  padding: 10px; 
+}
+
+.container img:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); 
 }
 
 .container {
   width: 100%;
   aspect-ratio: 1 / 1;
   position: relative;
-  /* Retirez le margin ici pour éviter l'espacement vertical */
 }
 
 .container img {

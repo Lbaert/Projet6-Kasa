@@ -1,6 +1,6 @@
 .home, .about, .logement, .notFound{
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 1240px;
 }
 
 * {
@@ -9,4 +9,35 @@
 
 .nav .active {
     border-bottom: 2px solid  #FF6060;
+}
+
+@media screen and (max-width: 1280px) and (min-width: 860px) {
+    .home, .about, .logement, .notFound {
+      width: 70%;
+    }
+    .titleBanner {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .conteneur-parent {
+      width: 60%;
+    }
+    .titleBanner {
+        font-size: 24px;
+    }
+    .header .logo {
+        width: 100px;
+    }
+    .header li a {
+        font-size: 16px;
+    }
+    .card-link .container h3 {
+        font-size: 12px;
+        padding: 5px;
+    }
+    .footer p {
+        font-size: 16px;
+    }
 }
