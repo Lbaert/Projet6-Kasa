@@ -3,7 +3,6 @@
 .collapse {
     border-radius: 15px;
     margin: 10px;
-    background-color: #FF6060;
   }
   
   .collapse-header {
@@ -14,6 +13,8 @@
     padding: 0 10px;
     color: white;
     margin-top: 30px;
+    background-color: #FF6060;
+    border-radius: 15px;
   }
   
   .arrow {
@@ -36,4 +37,14 @@ h3 {
     font-weight: 500;
     font-size: 24px;
     margin: 0;
+}
+
+.logement .collapses {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.logement .collapse {
+  width: 50%;
 }

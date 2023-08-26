@@ -10,3 +10,55 @@
         bottom: 0;
     }
 }
+
+.logement-details {
+    display: flex;
+    justify-content: space-between; 
+    color: #FF6060;
+}
+  
+.info-logement {
+    flex: 1; 
+}
+  
+.info-host {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    margin: 10px;
+}
+  
+.host {
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.logement .title {
+    font-size: 16px;
+}
+
+.logement .tag {
+    background-color: #FF6060;
+    color: white;
+    margin-right: 20px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.logement .tags {
+    display: flex;
+}
+
+.logement .img-host {
+    border-radius: 100px;
+    width: 50px;
+    margin: 0 10px;
+}
