@@ -1,9 +1,10 @@
 import './carousel.scss';
+import '../../data/data';
 
-export default function Carousel() {
+export default function Carousel(props) {
   return (
-    <div className="card">
-      <h3>test carousel</h3>
+    <div className="carousel">
+      <img src= {props.images [0]} ></img>
     </div>
   );
 }
