@@ -4,6 +4,7 @@ import Carousel from "../../components/carousel/Carousel";
 import Collapse from '../../components/collapse/Collapse';
 import Footer from '../../components/footer/Footer';
 import Rating from '../../components/rating/Rating';
+import NotFound from '../../pages/notFound/NotFound';
 import './logement.scss';
 import { logementList } from '../../data/data';
 import { useParams } from "react-router-dom";
@@ -13,7 +14,7 @@ export default function Logement() {
   const logement = logementList.find(item => item.id === logementId);
 
   if (!logement) {
-    return <div>Logement introuvable</div>;
+    return <NotFound />; 
   }
 
   return (
@@ -37,9 +38,9 @@ export default function Logement() {
             <div className='name-host'> {logement.host.name}</div>
             <img className='img-host' src={logement.host.picture} alt={logement.host.name} />
           </div>
-          <p className='rating'>
+          <div className='rating'>
             <Rating rating={parseInt(logement.rating)} />
-          </p>
+          </div>
         </div>
       </div>
       <div className='collapses'>
@@ -49,4 +50,3 @@ export default function Logement() {
     </div>
   );
 }
-

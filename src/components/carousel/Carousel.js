@@ -16,18 +16,25 @@ export default function Carousel(props) {
 
   return (
     <div className="carousel">
-      <button onClick={prevSlide} className="carousel-button prev">
-        &lt;
-      </button>
+      {props.images.length > 1 && (
+        <button onClick={prevSlide} className="carousel-button prev">
+          &lt;
+        </button>
+      )}
       <div className="carousel-content">
         <img src={props.images[currentIndex]} alt={`Image ${currentIndex}`} />
-        <div className="image-counter">
-          {currentIndex + 1}/{props.images.length}
-        </div>
+        {props.images.length > 1 && (
+          <div className="image-counter">
+            {currentIndex + 1}/{props.images.length}
+          </div>
+        )}
       </div>
-      <button onClick={nextSlide} className="carousel-button next">
-        &gt;
-      </button>
+      {props.images.length > 1 && (
+        <button onClick={nextSlide} className="carousel-button next">
+          &gt;
+        </button>
+      )}
     </div>
   );
 }
+

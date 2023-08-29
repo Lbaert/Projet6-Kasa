@@ -1,17 +1,16 @@
 .rating {
     display: inline-block;
     position: relative;
-    bottom: 10px;
   }
   
   .star {
-    font-size: 32px; /* Taille des étoiles */
-    color: red; /* Couleur des étoiles */
+    font-size: 32px; 
+    color: red; 
     margin-right: 3px;
 
   }
   
   .star.filled {
-    color: red; /* Couleur des étoiles remplies */
+    color: red; 
   }
   
