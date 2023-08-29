@@ -40,4 +40,37 @@
     .footer p {
         font-size: 16px;
     }
+    .notFound p {
+        font-size: 16px;
+        width: 50%;
+    }
+    .home .card-link {
+        width: auto;
+    }
+    .card-link .container h3 {
+        padding: 25px;
+    }
+    .info-host {
+        position: absolute;
+        bottom: 500px;
+        bottom: 470px;
+        flex-direction: column-reverse ;
+    }
+    .host {
+        position: absolute;
+        left: 220px;
+    }
+    .logement .collapses {
+        display: block;
+        margin-top: 45px;
+    }
+    .logement .collapse {
+        width: 90%;
+    }
+    .collapse-header {
+        height: 30px;
+    }
+    .arrow {
+        font-size: 24px;
+    }
 }

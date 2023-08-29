@@ -26,8 +26,11 @@ main h1 {
     justify-content: center;
 }
 
-main p {
+.notFound p {
     font-size: 48px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
 }
 
 .nav-link {
