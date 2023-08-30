@@ -36,6 +36,8 @@
     .card-link .container h3 {
         font-size: 12px;
         padding: 5px;
+        bottom: -1px;
+        padding: 25px;
     }
     .footer p {
         font-size: 16px;
@@ -46,19 +48,6 @@
     }
     .home .card-link {
         width: auto;
-    }
-    .card-link .container h3 {
-        padding: 25px;
-    }
-    .info-host {
-        position: absolute;
-        bottom: 500px;
-        bottom: 470px;
-        flex-direction: column-reverse ;
-    }
-    .host {
-        position: absolute;
-        left: 220px;
     }
     .logement .collapses {
         display: block;
@@ -72,5 +61,21 @@
     }
     .arrow {
         font-size: 24px;
+    }
+    .home .container {
+        height: 250px;
+        width: 300px;
+    }
+    .card {
+        display: flex;
+        justify-content: center;
+    }
+    .logement-details {
+        flex-direction: column;
+    }
+    .logement-details .info-host  {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
 }

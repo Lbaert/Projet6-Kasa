@@ -11,7 +11,7 @@ export default function Collapse({ title, content }) {
   return (
       <div className="collapse">
         <div className="collapse-header" onClick={toggleCollapse}>
-          <h3>{title}</h3>
+          <h2>{title}</h2>
           <div className={`arrow ${isCollapsed ? 'up' : 'down'}`}>&#8593;</div>
         </div>
         {!isCollapsed && <div className="collapse-content">{content}</div>}
