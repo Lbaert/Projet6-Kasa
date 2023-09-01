@@ -2,7 +2,7 @@
 
 .card {
   background-color: #f6f6f6;
-  border-radius: 20px;
+  border-radius: 25px;
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
@@ -34,14 +34,14 @@
 }
 
 .container h3 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   position: absolute;
   bottom: 4px;
   left: 0;
   right: 0;
   margin: 0;
-  padding: 20px;
+  padding: 15px;
   color: #f6f6f6;
   background: rgb(0, 0, 0);
   background: linear-gradient(

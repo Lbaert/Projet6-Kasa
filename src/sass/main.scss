@@ -8,8 +8,8 @@
   }
 
 
-@media screen and (min-width: 1920px) {
-    .about footer, .notFound footer, .logement footer {
+@media screen and (min-width: 1022px) and (min-height: 1042px) {
+    .notFound footer, .logement footer, .about footer{
         background-color: black;
         width: 100%;
         margin-top: 35px;
@@ -26,6 +26,12 @@
     .titleBanner {
         font-size: 32px;
     }
+    .container h3 {
+        font-size: 12px;
+    }
+    .banner img {
+        height: 150px;
+    }
 }
 
 @media screen and (max-width: 860px) {
@@ -33,7 +39,7 @@
       width: 60%;
     }
     .titleBanner {
-        font-size: 24px;
+        font-size: 18px;
     }
     .header .logo {
         width: 100px;
@@ -54,28 +60,37 @@
         font-size: 24px;
     }
     .home .card-link {
-        width: auto;
+        width: 100%;
+        padding: 0;
     }
     .logement .collapses {
         display: block;
-        margin-top: 45px;
+        margin-top: 30px;
     }
     .logement .collapse {
-        width: 90%;
+        width: 100%;
     }
     .collapse-header {
         height: 30px;
+    }
+    .logement .collapse-content {
+        width: 95%;
+        bottom: 15px;
     }
     .arrow {
         font-size: 24px;
     }
     .home .container {
         height: 250px;
-        width: 300px;
+        width: 100%;
+        margin-bottom: 20px;
     }
     .card {
         display: flex;
         justify-content: center;
+        background-color: white;
+        margin-top: 30px;
+        padding: 0;
     }
     .logement-details {
         flex-direction: column;
@@ -84,5 +99,15 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+    }
+    .banner img {
+        height: 100px;
+        border-radius: 10px;
+    }
+    .logement .collapse-header {
+        margin-top: 0;
+        margin-bottom: 10px;
+        height: auto;
+        width: 95%;
     }
 }

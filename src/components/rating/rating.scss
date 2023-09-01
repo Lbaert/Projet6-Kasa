@@ -1,13 +1,14 @@
 .rating {
     display: inline-block;
     position: relative;
+    left: 5px;
+    bottom: 3px;
   }
   
   .star {
     font-size: 32px; 
     color: red; 
     margin-right: 3px;
-
   }
   
   .star.filled {
