@@ -1,5 +1,6 @@
 import './collapse.scss';
 import React, { useState } from 'react';
+import arrowIcon from '../../img/arrow_back_ios-24px 2.png';
 
 export default function Collapse({ title, content }) {
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -12,7 +13,11 @@ export default function Collapse({ title, content }) {
       <div className="collapse">
         <div className="collapse-header" onClick={toggleCollapse}>
           <h2>{title}</h2>
-          <div className={`arrow ${isCollapsed ? 'up' : 'down'}`}>&#8593;</div>
+          <img
+          src={arrowIcon}
+          alt={isCollapsed ? 'Expand' : 'Collapse'}
+          className={`collapse-icon ${isCollapsed ? '' : 'expanded'}`}
+        />
         </div>
         {!isCollapsed && <div className="collapse-content">{content}</div>}
       </div>

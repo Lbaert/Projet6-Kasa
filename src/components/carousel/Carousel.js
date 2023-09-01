@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './carousel.scss';
+import previousImage from '../../img/arrow_back_ios-24px 1.png'
+import nextImage from '../../img/arrow_forward_ios-24px 1.png'
 
 export default function Carousel(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,12 +19,10 @@ export default function Carousel(props) {
   return (
     <div className="carousel">
       {props.images.length > 1 && (
-        <button onClick={prevSlide} className="carousel-button prev">
-          &lt;
-        </button>
-      )}
+        <img onClick={prevSlide} src={previousImage} className="carousel-button prev" alt="Précédent" />
+        )}
       <div className="carousel-content">
-        <img src={props.images[currentIndex]} alt={`Image ${currentIndex}`} />
+        <img src={props.images[currentIndex]} className='imgContent' alt={`Image ${currentIndex}`} />
         {props.images.length > 1 && (
           <div className="image-counter">
             {currentIndex + 1}/{props.images.length}
@@ -30,9 +30,7 @@ export default function Carousel(props) {
         )}
       </div>
       {props.images.length > 1 && (
-        <button onClick={nextSlide} className="carousel-button next">
-          &gt;
-        </button>
+        <img onClick={nextSlide} src={nextImage} className="carousel-button next" alt="Suivant" />
       )}
     </div>
   );
