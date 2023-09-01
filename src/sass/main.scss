@@ -35,8 +35,8 @@
 }
 
 @media screen and (max-width: 860px) {
-    .conteneur-parent {
-      width: 60%;
+    .home, .about, .logement, .notFound {
+      width: 90%;
     }
     .titleBanner {
         font-size: 18px;
@@ -48,7 +48,7 @@
         font-size: 16px;
     }
     .card-link .container h3 {
-        font-size: 12px;
+        font-size: 14px;
         padding: 5px;
         bottom: -1px;
         padding: 25px;
