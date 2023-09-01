@@ -15,6 +15,10 @@
     background-color: #FF6060;
     border-radius: 10px;
     height: 50px;
+    margin-top: 0;
+    height: 50px;
+    z-index: 2;
+    position: relative;
   }
 
   .collapse-icon {
@@ -44,7 +48,7 @@ h2 {
     margin: 0;
 }
 
-.logement .collapses {
+.collapses {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -54,11 +58,8 @@ h2 {
   width: 50%;
 }
 
-.logement .collapse-header {
-  margin-top: 0;
-  height: 50px;
-  z-index: 2;
-  position: relative;
+.about .collapse-header {
+  margin-top: 10px;
 }
 
 .logement .collapse:first-child {
